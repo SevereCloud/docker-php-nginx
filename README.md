@@ -13,7 +13,7 @@
 ## Запуск
 
 ```sh
-# git clone git@github.com:SevereCloud/docker-php-nginx.git folder && cd folder
+# git clone https://github.com/SevereCloud/docker-php-nginx.git folder && cd folder
 docker-compose up -d --force-recreate --build
 ```
 
@@ -24,7 +24,7 @@ server {
   listen 80;
   server_name exaple.com;
   location / {
-    proxy_pass http://ip-docker:80;
+    proxy_pass http://ip-container:80;
   }
 }
 ```
